@@ -1,0 +1,85 @@
+body {
+    
+    margin:0;
+    height:100vh;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-family:'Lato', sans-serif;
+    background-color:#273c75;
+    position:relative;
+}
+
+.box {
+    width:80px;
+    height:80px;
+    background-color:blanchedalmond;
+    -webkit-transform:translateY(80px) rotate(0);
+        -ms-transform:translateY(80px) rotate(0);
+            transform:translateY(80px) rotate(0);
+    /* animation: boxfloat 10s linear infinite; */
+}
+
+@-webkit-keyframes boxfloat {
+    0% { -webkit-transform:translateY(80px) rotate(0); transform:translateY(80px) rotate(0); }
+    100% { -webkit-transform:translateY(-100vh) rotate(180deg); transform:translateY(-100vh) rotate(180deg); opacity:0; }
+}
+
+@keyframes boxfloat {
+    0% { -webkit-transform:translateY(80px) rotate(0); transform:translateY(80px) rotate(0); }
+    100% { -webkit-transform:translateY(-100vh) rotate(180deg); transform:translateY(-100vh) rotate(180deg); opacity:0; }
+}
+
+.box1 {
+    -webkit-animation-delay:1.5s;
+            animation-delay:1.5s;
+    -webkit-animation: boxfloat 6s linear infinite;
+            animation: boxfloat 6s linear infinite;
+}
+.box2 {
+    -webkit-animation-delay:3.4s;
+            animation-delay:3.4s;
+    -webkit-animation: boxfloat 9s linear infinite;
+            animation: boxfloat 9s linear infinite;
+}
+.box3 {
+    -webkit-animation-delay:6.5s;
+            animation-delay:6.5s;
+    -webkit-animation: boxfloat 7s linear infinite;
+            animation: boxfloat 7s linear infinite;
+}
+.box4 {
+    -webkit-animation-delay:8.3s;
+            animation-delay:8.3s;
+    -webkit-animation: boxfloat 10s linear infinite;
+            animation: boxfloat 10s linear infinite;
+}
+.box5 {
+    -webkit-animation-delay:5.6s;
+            animation-delay:5.6s;
+    -webkit-animation: boxfloat 6.5s linear infinite;
+            animation: boxfloat 6.5s linear infinite;
+}
+.box6 {
+    -webkit-animation-delay:4.2s;
+            animation-delay:4.2s;
+    -webkit-animation: boxfloat 9s linear infinite;
+            animation: boxfloat 9s linear infinite;
+}
+.box7 {
+    -webkit-animation-delay:7.9s;
+            animation-delay:7.9s;
+    -webkit-animation: boxfloat 10s linear infinite;
+            animation: boxfloat 10s linear infinite;
+}
+.box8 {
+    -webkit-animation-delay:3.4s;
+            animation-delay:3.4s;
+    -webkit-animation: boxfloat 8s linear infinite;
+            animation: boxfloat 8s linear infinite;
+}

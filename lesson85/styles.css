@@ -1,0 +1,59 @@
+.banner {
+    height:100vh;
+    /* background-color: #e09900; */
+    background-size: 100px 100px;
+    background-image: 
+  /*   radial-gradient(
+        transparent 10px,
+        #c0bdbd 10px,
+        #f4f4f4 12px,
+        transparent 24px
+    ); */
+ /*    radial-gradient(
+       transparent 0px,
+        #000 50px
+       
+    ); */
+    radial-gradient(
+        #000 1px,
+        #000 4px,
+        transparent 4px,
+        transparent 10px,
+        rgb(252, 0, 0) 10px,
+        rgb(252, 0, 0) 13px,
+        transparent 13px,
+        transparent 23px,
+        rgb(0,252,0) 23px,
+        rgb(0,252,0) 26px,
+        transparent 26px,
+        transparent 36px,
+        rgb(0,0,252) 36px,
+        rgb(0,0,252) 39px,
+        transparent 39px,
+        transparent 47px,
+        rgb(252,252,0) 47px,
+        rgb(252,252,0) 50px,
+        transparent 50px
+                   );
+
+    background-position:0 0;
+    animation: animated-pattern 15s linear infinite;
+    position:relative;
+}
+
+@keyframes animated-pattern {
+    from { background-position: 0 0 }
+    to { background-position: 0 600px;}
+}
+
+.banner:before {
+    content:"Welcome!";
+    color:black;
+    font-size:120px;
+    font-weight:900;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
