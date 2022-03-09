@@ -1,0 +1,77 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: cornsilk;
+}
+
+.nav1 a,
+.nav2 a {
+	text-decoration: none;
+	padding: 0 5px;
+	margin: 0 15px 50px 15px;
+	font-size: 2rem;
+	position: relative;
+	display: inline-block;
+	color: darkslateblue;
+}
+
+.nav1 a:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 25px;
+	height: 4px;
+	background-color: turquoise;
+	transition: .6s;
+	transform: rotate(180deg);
+}
+
+.nav1 a:after {
+	content: "";
+	position: absolute;
+	bottom: 0%;
+	right: 0;
+	width: 25px;
+	height: 4px;
+	background-color: crimson;
+	transition: .6s;
+}
+
+.nav1 a:hover:before {
+	left: 75%;
+	width: 50%;
+	transform: translateX(-50%) rotate(180deg);
+}
+
+.nav1 a:hover:after {
+	right: 75%;
+	width: 50%;
+	transform: translateX(50%);
+}
+
+/* second nav section */
+.nav2 a:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 10px;
+	height: 4px;
+	background-color: crimson;
+	transform: translateX(-50%);
+	transition: .6s;
+}
+
+.nav2 a:hover:before {
+	left: 50%;
+	width: 100%;
+}

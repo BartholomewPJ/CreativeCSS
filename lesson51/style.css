@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 20px;
+	font-size: 2rem;
+	position: relative;
+	display: inline-block;
+	transition: 0.5s;
+}
+
+nav a:hover {
+	color: purple;
+	cursor: pointer;
+}
+
+nav a::before {
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 4px;
+	background-color: red;
+	top: 0;
+	left: 0;
+	transition: 1s;
+}
+
+nav a::after {
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 4px;
+	background-color: green;
+	bottom: 0;
+	right: 0;
+	transition: 1s;
+}
+
+nav a:hover:before,
+nav a:hover:after {
+	width: 100%;
+}
